@@ -19,8 +19,9 @@ CONFIG(debug, debug|release) {
 
 SOURCES += qmsgbox.cpp
 
-HEADERS += qmsgbox.h\
-        src_global.h
+HEADERS += qmsgbox.h
+
+RESOURCES += qmsgbox.qrc
 
 unix:!symbian {
     maemo5 {
@@ -31,6 +32,3 @@ unix:!symbian {
 
     INSTALLS += target
 }
-
-RESOURCES += \
-    qmsgbox.qrc

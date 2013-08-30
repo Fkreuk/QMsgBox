@@ -29,7 +29,11 @@
 #include <QtGui/QMessageBox>
 #endif
 
-#include "src_global.h"
+#if defined(SRC_LIBRARY)
+#  define SRCSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define SRCSHARED_EXPORT Q_DECL_IMPORT
+#endif
 
 class SRCSHARED_EXPORT QMsgBox : public QMessageBox
 {
