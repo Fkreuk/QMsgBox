@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/" >
+        <file alias="imageCritical" >images/msgbox_critical.png</file>
+        <file alias="imageInformation" >images/msgbox_information.png</file>
+        <file alias="imageQuestion" >images/msgbox_question.png</file>
+        <file alias="imageWarning" >images/msgbox_warning.png</file>
+    </qresource>
+</RCC>
